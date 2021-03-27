@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "24618341101",
+    "firebase_url": "https://qu4trogamemp.firebaseio.com",
+    "project_id": "qu4trogamemp",
+    "storage_bucket": "qu4trogamemp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24618341101:android:c48e94016ec3a92c13f2e4",
+        "android_client_info": {
+          "package_name": "com.example.qu4trogame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24618341101-7s8rglu9jao2tsmn6ohcjhf5arokmf2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qu4trogame",
+            "certificate_hash": "92642025c4ac60c7024484a5924b6bd5d4ddff0a"
+          }
+        },
+        {
+          "client_id": "24618341101-m505kvoapb3645cokccrm7tcuqs5cgts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk4qkaFRMlLnOGCDa3rfPVImtkV9b6Vyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24618341101-m505kvoapb3645cokccrm7tcuqs5cgts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

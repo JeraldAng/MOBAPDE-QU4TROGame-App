@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fontFamily="@font/quicksand_regular"
+    android:background="@drawable/settings_bg"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="true"
+            android:onClick="back"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_button_small"
+            android:background="#F3FEFF"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="SETTINGS"
+                android:textColor="#000000"
+                android:layout_marginTop="@dimen/_minus10sdp"
+                android:textSize="@dimen/_33sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainBody"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnChangeUsername"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="changeUsername"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_change_username"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnChangePassword"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="changePassword"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_change_password"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMusic"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="toggleMusic"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_music_on"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnExit"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="exit"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_exit"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

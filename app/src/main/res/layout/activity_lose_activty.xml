@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:fontFamily="@font/quicksand_regular"
+    android:background="@drawable/bg_you_lose"
+    tools:context=".LoseActivity">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:text="YOU LOSE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_gravity="center"
+            android:text="EXIT"
+            android:layout_marginRight="10dp"
+            android:textSize="24dp"
+            android:onClick="exit"
+            android:background="@drawable/btn_red"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

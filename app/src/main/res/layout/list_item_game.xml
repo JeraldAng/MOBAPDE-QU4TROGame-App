@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/list_item_game_textview"
+    android:padding="@dimen/_10sdp"
+    android:background="#00000000"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_opponent_cards"
+        android:id="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/_17sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/quicksand_semibold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_of_pile"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="visible"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/deck"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/quicksand_regular"
+        android:layout_marginBottom="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_val_top_pile"
+        android:id="@+id/textView_top_pile"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="#A5E1E6"
+        android:textSize="@dimen/_28sdp"
+        android:gravity="center"
+        android:clickable="false"
+        android:visibility="visible"
+        android:minHeight="@dimen/_55sdp"
+        android:maxHeight="@dimen/_55sdp"
+        android:maxWidth="@dimen/_55sdp"
+        android:minWidth="@dimen/_55sdp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deck"
+        android:layout_above="@+id/btns"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cards_rem"
+            android:id="@+id/textView_cards_rem"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_minus10sdp"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:fontFamily="@font/quicksand_regular"
+            android:layout_marginTop="@dimen/_1sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:id="@+id/textView4"
+            android:textSize="@dimen/_21sdp"
+            android:visibility="visible"
+            android:fontFamily="@font/quicksand_regular"
+            android:background="@drawable/ic_cardpack"
+            android:layout_below="@+id/textView_cards_rem"
+            android:layout_marginBottom="@dimen/_minus15sdp"
+            android:layout_alignLeft="@+id/textView_cards_rem"
+            android:layout_alignStart="@+id/textView_cards_rem" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btns"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_card"
+            android:id="@+id/button_pick_cd"
+            android:clickable="true"
+            android:onClick="pick_cd_click"
+            android:visibility="visible"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/quicksand_semibold"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/btn_purple"
+            android:enabled="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/btns"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_1"
+            android:id="@+id/button_1"
+            android:textSize="@dimen/_28sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="#FF6961"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_1_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_alignTop="@+id/button_2"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_2"
+            android:id="@+id/button_2"
+            android:background="#FFE663"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_28sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_2_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/button_1"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_3"
+            android:id="@+id/button_3"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_28sdp"
+            android:gravity="center"
+            android:background="#AAE9A4"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_3_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_alignTop="@+id/button_2"
+            android:layout_toRightOf="@id/button_2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_4"
+            android:id="@+id/button_4"
+            android:background="#FF6961"
+            android:textSize="@dimen/_28sdp"
+            android:textIsSelectable="false"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_4_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:enabled="true"
+            android:layout_alignTop="@+id/button_3"
+            android:layout_toRightOf="@+id/button_3"
+            android:layout_marginLeft="@dimen/_5sdp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_5"
+            android:id="@+id/button_5"
+            android:gravity="center"
+            android:textSize="@dimen/_28sdp"
+            android:background="#AAE9A4"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_5_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_alignTop="@+id/button_4"
+            android:layout_toRightOf="@+id/button_4"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_6"
+            android:id="@+id/button_6"
+            android:gravity="center"
+            android:textSize="@dimen/_28sdp"
+            android:background="#A5E1E6"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_6_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_alignTop="@+id/button_5"
+            android:layout_toRightOf="@+id/button_5"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_val_7"
+            android:id="@+id/button_7"
+            android:gravity="center"
+            android:textSize="@dimen/_28sdp"
+            android:background="#FFE663"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="button_7_click"
+            android:visibility="visible"
+            android:minHeight="@dimen/_55sdp"
+            android:maxHeight="@dimen/_55sdp"
+            android:maxWidth="@dimen/_55sdp"
+            android:minWidth="@dimen/_55sdp"
+            android:layout_alignTop="@+id/button_6"
+            android:layout_toRightOf="@+id/button_6"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:enabled="true" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

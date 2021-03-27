@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_game"
+    android:fontFamily="@font/quicksand_regular"
+    tools:context=".MainGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/quicksand_semibold"
+                    android:gravity="right"
+                    android:onClick="pause"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:text="⏸"
+                    android:textSize="@dimen/_30sdp" />
+
+                <fragment
+                    android:id="@+id/fragment"
+                    android:name="com.example.qu4trogame.MainGameFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_55sdp"
+                    android:gravity="center"
+                    tools:layout="@layout/fragment_main" />
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_245sdp"
+                    android:fontFamily="@font/quicksand_semibold"
+                    android:text="Dyonne"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_16sdp" />
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

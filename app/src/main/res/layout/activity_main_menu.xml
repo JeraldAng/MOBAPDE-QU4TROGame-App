@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:fontFamily="@font/quicksand_regular"
+    android:background="#F3FEFF"
+    tools:context=".MainMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/btn_bg"
+            android:onClick="logout"
+            android:text="LOGOUT"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/btnQuitGame"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/btn_bg"
+            android:onClick="quitGame"
+            android:text="QUIT GAME"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textAlignment="center"
+                android:textSize="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_270sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_minus10sdp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/dog_house"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnNewGame"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="  ⚾ NEW GAME"
+                android:onClick="newGame"
+                android:textAlignment="textStart"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_green"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnGameRecords"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="  🏆 GAME RECORDS"
+                android:textAlignment="textStart"
+                android:onClick="gameRecords"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_red"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnHowToPlay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="  📕 HOW TO PLAY"
+                android:textAlignment="textStart"
+                android:onClick="howToPlay"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_blue"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="  ⚙️ SETTINGS"
+                android:onClick="settings"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_yellow"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
